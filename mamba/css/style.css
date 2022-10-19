@@ -337,7 +337,7 @@ header{
 .slide-img::after{
 	content:"";
 	position:absolute;
-	background-color:rgba(0,0,0,0.5);
+	background-color:rgba(0,0,0,0.6);
 	top:0;
 	bottom:0;
 	left:0;
@@ -360,7 +360,7 @@ header{
 .slide-img::after{
 	content:"";
 	position:absolute;
-	background-color:rgba(0,0,0,0.5);
+	background-color:rgba(0,0,0,0.6);
 	top:0;
 	bottom:0;
 	left:0;
@@ -373,14 +373,14 @@ header{
 	background-position:top center;
 	width:100%;
 	background-size:cover;
-	height:90vh;
+	height:100vh;
 	background-repeat:no-repeat;
 	position:relative;
 }
 .slide-img::after{
 	content:"";
 	position:absolute;
-	background-color:rgba(0,0,0,0.5);
+	background-color:rgba(0,0,0,0.6);
 	top:0;
 	bottom:0;
 	left:0;
@@ -389,7 +389,7 @@ header{
 }
 @media(min-width:1020px){
 .slider{
-	padding-top:3%;
+	padding-top:5%;
 	margin-top:1%;
 }
 .slide-img{
@@ -397,7 +397,7 @@ header{
 	background-position:top center;
 	width:100%;
 	background-size:cover;
-	height:80vh;
+	height:90vh;
 	background-repeat:no-repeat;
 	position:relative;
 }
@@ -419,7 +419,7 @@ header{
 .slide-content{
 	position:absolute;
 	align-items:center;
-	margin:15% 0 0 5%;
+	margin:35% 0 0 5%;
 	display:flex;
 	width:60%;
 }
@@ -457,7 +457,7 @@ header{
 .slide-content{
 	position:absolute;
 	align-items:center;
-	margin:18% 0 0 5%;
+	margin:30% 0 0 5%;
 	display:flex;
 	width:90%;
 }
@@ -497,7 +497,7 @@ header{
 .slide-content{
 	position:absolute;
 	align-items:center;
-	margin:18% 0 0 5%;
+	margin:30% 0 0 8%;
 	display:flex;
 	width:60%;
 }
@@ -537,7 +537,7 @@ header{
 .slide-content{
 	position:absolute;
 	align-items:center;
-	margin:10% 0 0 5%;
+	margin:15% 0 0 7%;
 	display:flex;
 	width:60%;
 }
@@ -658,6 +658,10 @@ header{
     font-size: 2rem;
     color: #428bca;
     padding: 4%;
+}
+.about-ico:hover{
+    background-color: #428bca;
+	color: #fff;
 }
 
 @media(min-width:360px){
@@ -1331,6 +1335,9 @@ header{
 	width:50%;
 	padding:2%;
 }
+.card:hover .icon{
+	box-shadow: 0px 0 30px rgb(66 139 202 / 60%);
+}
 .icon{
 	position:relative;
 	display:flex;
@@ -1894,9 +1901,17 @@ header{
 	width:22.5%;
 	margin:3% 0 0 0;
 }
+.p-i{
+	overflow:hidden;
+	border-radius:0.2rem;
+}
 .people img{
 	border-radius:0.2rem;
 	width:100%;
+	transition:all ease-in-out 0.5s;
+}
+.people img:hover{
+	transform:scale(1.1);
 }
 .board{
 	position: absolute;
@@ -2544,6 +2559,12 @@ header{
 	color:#fff;
 	font-weight:600;
 	margin:auto;
+}
+form input:focus{
+	outline:none;
+}
+textarea:focus{
+	outline:none;
 }
 }
 /*form media ends*/
